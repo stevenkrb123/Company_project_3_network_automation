@@ -1,0 +1,7 @@
+ip access-list extended napalm
+ deny tcp any any eq telnet
+ permit ip any any
+
+
+ interface Ethernet0/0
+  ip access-group napalm in
